@@ -1,0 +1,52 @@
+{% block content %}
+<div class = 'container'>
+    <h1>Diet Recommendation System</h1>
+    <br><br/>
+<form action="/results" method="POST">
+  <div class="mb-3">
+    <label for="age" class="form-label">Age</label>
+    <input type="number" class="form-control" id="age" placeholder="Age" name="age" required>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" name="veg" id="veg" value="1" checked>
+  <label class="form-check-label" for="veg">
+    Veg
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="veg" id="nonveg" value="0">
+  <label class="form-check-label" for="nonveg">
+    Non Veg
+  </label>
+</div>
+  <div class="mb-3">
+    <label for="weight" class="form-label">Weight</label>
+    <input name = "weight" type="number" class="form-control" id="weight" placeholder="(in Kg)" step="0.01" min="0" required>
+  </div>
+  <div class="mb-3">
+    <label for="height" class="form-label">Height (in cm)</label>
+    <input name = "height" type="number" class="form-control" id="height" placeholder="(in cm)" step="0.01" min="0" required>
+  </div>
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="func" id="wloss" value="wloss" checked>
+  <label class="form-check-label" for="wloss">
+    Weight Loss
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="func" id="wgain" value="wgain">
+  <label class="form-check-label" for="wgain">
+    Weight Gain
+  </label>
+</div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" name="func" id="main" value="main">
+  <label class="form-check-label" for="main">
+    Maintain Weight
+  </label>
+   <br><br/>
+</div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+{% endblock %}
