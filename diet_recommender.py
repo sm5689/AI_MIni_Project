@@ -5,7 +5,7 @@ import subprocess
 import fnmatch
 import pandas as pd
 import numpy as np
-import seaborn as sns
+# import seaborn as sns
 import matplotlib.pyplot as plt
 from tkinter import *
 from PIL import ImageFilter,Image
@@ -80,7 +80,7 @@ def Weight_Loss(age, veg, weight, height):
     LunchfoodseparatedIDdata=LunchfoodseparatedIDdata.T
     #print(LunchfoodseparatedIDdata)
 
-    # retrieving Breafast data rows by loc method 
+    # retrieving Breakfast data rows by loc method
     breakfastfoodseparatedIDdata = data.iloc[breakfastfoodseparatedID]
     breakfastfoodseparatedIDdata=breakfastfoodseparatedIDdata.T
     val=list(np.arange(5,15))
