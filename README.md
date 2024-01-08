@@ -1,7 +1,7 @@
 # Diet Recommendation System
 
 ## Overview
-The Diet Chart Recommendation System is an innovative application designed to provide personalized diet recommendations based on a user's physical attributes and dietary preferences. Utilizing Python, Pandas, NumPy, Tkinter, Sklearn's KMeans clustering, and RandomForestClassifier, this system processes user data and suggests optimal dietary options.
+The Diet Recommendation System is an innovative application designed to provide personalized diet recommendations based on a user's physical attributes and dietary preferences. Utilizing Python, Pandas, NumPy, Tkinter, Sklearn's KMeans clustering, and RandomForestClassifier, this system processes user data and suggests optimal dietary options.
 
 ## Features
 - **User Input Interface**: Built with Tkinter, it allows users to input age, dietary preference (vegetarian or non-vegetarian), weight, and height.
